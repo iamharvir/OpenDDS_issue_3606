@@ -87,7 +87,7 @@ jobs:
         echo "COMPILER_VERSION=$COMPILER_VERSION" >> $GITHUB_ENV
     - name: install vcpkg packages
       id: runvcpkg
-      uses: lukka/run-vcpkg@v7
+      uses: lukka/run-vcpkg@v11
       with:
         vcpkgDirectory: '${{ github.workspace }}/vcpkg-qt'
         vcpkgGitCommitId: 70033dbb31527fb3e69654731f540f59c87787f9
